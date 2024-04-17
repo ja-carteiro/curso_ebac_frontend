@@ -1,0 +1,44 @@
+.container {
+    padding-top: 10px;
+    background-color: rgba(255, 255, 240, 0.826);
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+}
+
+h1 {
+    color: rgb(63, 94, 251);
+    font-style: italic;
+    font-size: 60px;
+}
+
+.form-campo input {
+    height: 18px;
+    width: 300px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.form-campo label {
+    color: black;
+    display: block;
+}
+
+button {
+    color: ivory;
+    background: rgb(63,94,251);
+    background: linear-gradient(45deg, rgb(63, 94, 251) 0%, rgba(252,70,107,1) 100%);
+    border: none;
+    margin-top: 20px;
+    padding: 5px 50px;
+    transition: all 0.5s ease-out;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    transition: all 0.2s ease;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
+}
