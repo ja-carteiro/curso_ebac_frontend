@@ -1,16 +1,22 @@
+// Maps
 @import 'maps.less';
+
+// Escapings
 @tabletView: ~"max-width: 1023px";
 @mobileView: ~"max-width: 767px";
+
+// Variables
+@defaultFont: Roboto, sans-serif;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: @defaultFont;
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: #colors[backgroundColor];
 }
 
 li {
@@ -24,7 +30,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: #colors[primaryColor];
     position: sticky;
     top: 0;
     left: 0;
@@ -45,7 +51,7 @@ header {
         margin-left: 24px;
 
         a {
-            color: #fff;
+            color: #colors[defaultWhite];
             text-decoration: none;
         }
     }
@@ -72,8 +78,8 @@ section {
 
     .product-button {
         display: block;
-        background-color: #44bd32;
-        color: #fff;
+        background-color: #colors[buttonColor];
+        color: #colors[defaultWhite];
         text-align: center;
         padding: 8px 0;
         border-radius: 8px;
@@ -81,7 +87,7 @@ section {
         text-decoration: none;
 
         &:hover {
-            background-color: #4cd137;
+            background-color: #colors[hoverColor];
         }
     }
 }
